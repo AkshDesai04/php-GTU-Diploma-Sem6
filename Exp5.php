@@ -6,7 +6,7 @@
     echo "Science: " . grade($science) . "<br>";
     echo "Computer: " . grade($computer) . "<br>";
     echo "Ss: " . grade($ss) . "<br>";
-    $avg = ($math + $english + $science + $computer + $ss)/5;
+    $avg = ($maths + $english + $science + $computer + $ss)/5;
     echo "Percentage: " . $avg . "%<br>";
     echo "Overall: " . grade($avg) . "<br>";
 
