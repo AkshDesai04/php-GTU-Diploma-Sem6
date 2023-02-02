@@ -1,8 +1,8 @@
 <?php
-    $num = 5;
-    echo fact($num);
-    function fact($num) {
-        if($num <= 0)   return 1;
-        else            return $num * fact($num - 1);
+    $n = 5;
+    echo fact($n);
+    function fact($n) {
+        if($n <= 0)   return 1;
+        else            return $n * fact($n - 1);
     }
 ?>
