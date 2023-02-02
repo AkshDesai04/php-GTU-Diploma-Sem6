@@ -1,15 +1,28 @@
 <?php
-    function sum(...$nums) {
+    // function sum(...$nums) {    //update to have function taught in class
+    //     $add = 0;
+    //     foreach($nums as $i) 
+    //         $add += $i;
+    //     return $add;
+    // }
+
+
+
+    function sum() {
+        $args = func_get_args();
         $add = 0;
-        foreach($nums as $i) 
+        foreach($args as $i)
             $add += $i;
         return $add;
     }
+
+
+
     function add($a, $b = 10) {
         return $a + $b;
     }
 
-    echo sum(1, 2, 3, 4, 5) . ".....";
-    echo add(1) . ".....";
-    echo add(1, 2) . ".....";
+    echo sum(1, 2, 3, 4, 5) . "<br>";
+    echo add(1) . "<br>";
+    echo add(1, 2) . "<br>";
 ?>
