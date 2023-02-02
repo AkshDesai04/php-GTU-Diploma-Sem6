@@ -1,13 +1,4 @@
 <?php
-    // function sum(...$nums) {    //update to have function taught in class
-    //     $add = 0;
-    //     foreach($nums as $i) 
-    //         $add += $i;
-    //     return $add;
-    // }
-
-
-
     function sum() {
         $args = func_get_args();
         $add = 0;
@@ -15,9 +6,6 @@
             $add += $i;
         return $add;
     }
-
-
-
     function add($a, $b = 10) {
         return $a + $b;
     }
