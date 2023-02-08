@@ -8,16 +8,17 @@
     echo "Ss: " . grade($ss) . "<br>";
     $avg = ($maths + $english + $science + $computer + $ss)/5;
     echo "Percentage: " . $avg . "%<br>";
-    echo "Overall: " . grade($avg) . "<br>";
+    echo "Overall: " . grade($avg, 1) . "<br>";
 
-    function grade($marks) {
-        if($marks > 90)     return "AA";
-        if($marks > 80)     return "AB";
-        if($marks > 70)     return "BB";
-        if($marks > 60)     return "BC";
-        if($marks > 50)     return "CC";
-        if($marks > 40)     return "CD";
-        
+    function grade($marks, $x = 0) {
+        //x = 0 -> for subjects
+        //x = 1 -> for overall
+        if($marks > 90)     return $x == 0 ? "AA" : "A";
+        if($marks > 80)     return $x == 0 ? "AB" : "B";
+        if($marks > 70)     return $x == 0 ? "BB" : "C";
+        if($marks > 60)     return $x == 0 ? "BC" : "D";
+        if($marks > 50)     return $x == 0 ? "CC" : "E";
+        if($marks > 40)     return $x == 0 ? "CD" : "F";
         return "Fail";
     }
 ?>
