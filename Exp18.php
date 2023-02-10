@@ -1,13 +1,10 @@
-<!-- check if str contains specifiic str "tqbfjotld" "jumps"
-print positionm of  last occuraance of "the" -->
-
 <?php
     $str = "The quick brown jumps over the lazy dog";
 
+    echo "The string ";
     if(!strpos($str, "jumps"))
-        echo "string doesnt contain the word" . "<br>";
-    else
-        echo "Yes, it comtains it." . "<br>";
+        echo "does not ";
+    echo "contains the word";
 
     echo "Last occ of 'the'" . strpos($str, "the");
 ?>
